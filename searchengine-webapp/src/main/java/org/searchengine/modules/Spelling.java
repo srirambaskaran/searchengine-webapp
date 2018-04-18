@@ -42,7 +42,7 @@ public class Spelling {
         String data = reader.lines().reduce("", new BinaryOperator<String>() {            
             @Override
             public String apply(String t, String u) {
-                return t+u;
+                return t+" "+u;
             }
         });
         reader.close();
